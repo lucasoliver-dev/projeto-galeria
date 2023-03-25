@@ -1,0 +1,228 @@
+.h2 {
+  color: #20C997;
+}
+
+* {
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #777;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 1s;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.header-brand {
+  color: #fff;
+  font-size: 3rem;
+}
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-navbar ul li .active {
+  color: #20C997;
+}
+.header-navbar ul li a:hover {
+  color: #20C997;
+}
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul li a:hover {
+  color: #fff;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @inclue mixins.container;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+.gallery :hover {
+  color: #4ab74c;
+  transition: 1s;
+}
+.gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+}
+.gallery-card-title {
+  font-size: 2rem;
+  font-weigth: 300;
+  margin-bottom: 1rem;
+}
+.gallery-card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gallery-card-btn:hover {
+  background-color: #FFF;
+  color: #000;
+}
+.gallery #card-1 {
+  background-image: url("../img/saopaulo.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/saopaulo.jpeg");
+}
+.gallery #card-2 {
+  background-image: url("../img/trancoso1.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/trancoso1.jpeg");
+}
+.gallery #card-3 {
+  background-image: url("../img/trancoso2.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/trancoso2.jpeg");
+}
+.gallery #card-4 {
+  background-image: url("../img/trancoso3.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/trancoso3.jpeg");
+}
+.gallery #card-5 {
+  background-image: url("../img/riodejaneiro.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/riodejaneiro.jpeg");
+}
+.gallery #card-6 {
+  background-image: url("../img/pinhal.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pinhal.jpeg");
+}
+.gallery #card-7 {
+  background-image: url("../img/gin.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gin.jpeg");
+}
+.gallery #card-8 {
+  background-image: url("../img/lambari.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/lambari.jpeg");
+}
+.gallery #card-9 {
+  background-image: url("../img/pizza.jpeg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pizza.jpeg");
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #20C997;
+}
+
+/*# sourceMappingURL=styles.css.map */
